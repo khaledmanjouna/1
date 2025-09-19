@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://khaledmanjouna.github.io/1/sitemap.xml
