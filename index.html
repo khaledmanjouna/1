@@ -493,7 +493,8 @@
     <section class="hero">
         <div class="hero-content">
             <h1 class="arabic-content">فيتامينات ومعادن لصحة أفضل - جودة نرويجية 🇳🇴</h1>
-<h1 class="english-content" style="display: none;">Vitamins and Minerals for Better Health - Norwegian Quality 🇳🇴</h1> <p class="arabic-content">اكتشف مجموعة منتجاتنا الطبيعية عالية الجودة لتعزيز صحتك ورفاهيتك</p>
+            <h1 class="english-content" style="display: none;">Vitamins and Minerals for Better Health - Norwegian Quality 🇳🇴</h1>
+            <p class="arabic-content">اكتشف مجموعة منتجاتنا الطبيعية عالية الجودة لتعزيز صحتك ورفاهيتك</p>
             <p class="english-content" style="display: none;">Discover our high-quality natural products to enhance your health and well-being</p>
             <a href="#products" class="btn arabic-content">تسوق الآن</a>
             <a href="#products" class="btn english-content" style="display: none;">Shop Now</a>
@@ -766,13 +767,13 @@
                 <!-- Product 16 -->
                 <div class="product-card">
                     <div class="product-image">
-                        <img src="https://raw.githubusercontent.com/khaledmanjouna/1/main/Go%20Tablets%20.jpg" alt="أقراص جو">
+                        <img src="https://raw.githubusercontent.com/khaledmanjouna/1/main/Go%20Tablets%20.jpg" alt="جوينت كير بلس">
                     </div>
                     <div class="product-info">
                         <h3 class="product-title arabic-content">جوينت كير بلس</h3>
                         <h3 class="product-title english-content" style="display: none;">Joint Care Plus</h3>
-                        <p class="product-benefit arabic-content">لصحة المفاصل والحركة والمرونة</p>
-                        <p class="product-benefit english-content" style="display: none;">For joint health, mobility, and flexibility</p>
+                        <p class="product-benefit arabic-content">مكمل متكامل لصحة المفاصل والعظام</p>
+                        <p class="product-benefit english-content" style="display: none;">Comprehensive supplement for joint and bone health</p>
                         <div class="product-price arabic-content">9$</div>
                         <div class="product-price english-content" style="display: none;">9$</div>
                     </div>
@@ -825,8 +826,44 @@
                 <div class="social-links">
                     <a href="#"><i class="fab fa-facebook"></i></a>
                     <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="https://wa.me/963956094985" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                </div>
+                <p class="arabic-content">&copy; 2023 جميع الحقوق محفوظة لخالد منجونة</p>
+                <p class="english-content" style="display: none;">&copy; 2023 All Rights Reserved to Khalid Manjouna</p>
+            </div>
+        </div>
+    </footer>
 
-
-
-
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const languageToggle = document.getElementById('languageToggle');
+            let isEnglish = false;
+            
+            languageToggle.addEventListener('click', function(e) {
+                e.preventDefault();
+                isEnglish = !isEnglish;
+                
+                const arabicElements = document.querySelectorAll('.arabic-content');
+                const englishElements = document.querySelectorAll('.english-content');
+                
+                if (isEnglish) {
+                    arabicElements.forEach(el => el.style.display = 'none');
+                    englishElements.forEach(el => el.style.display = 'block');
+                    document.dir = 'ltr';
+                    document.lang = 'en';
+                    document.querySelector('html').setAttribute('dir', 'ltr');
+                    document.querySelector('html').setAttribute('lang', 'en');
+                } else {
+                    arabicElements.forEach(el => el.style.display = 'block');
+                    englishElements.forEach(el => el.style.display = 'none');
+                    document.dir = 'rtl';
+                    document.lang = 'ar';
+                    document.querySelector('html').setAttribute('dir', 'rtl');
+                    document.querySelector('html').setAttribute('lang', 'ar');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
