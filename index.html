@@ -249,6 +249,8 @@
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease;
             position: relative;
+            display: flex;
+            flex-direction: column;
         }
         
         .product-card:hover {
@@ -256,7 +258,7 @@
         }
         
         .product-image {
-            height: 300px;
+            height: 200px;
             overflow: hidden;
         }
         
@@ -276,12 +278,29 @@
         .product-info {
             padding: 15px;
             text-align: center;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
         }
         
         .product-title {
             font-weight: 600;
             margin-bottom: 5px;
             color: var(--dark-color);
+        }
+        
+        .product-benefit {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 10px;
+            flex-grow: 1;
+        }
+        
+        .product-price {
+            font-weight: bold;
+            color: var(--primary-color);
+            font-size: 18px;
+            margin-top: auto;
         }
         
         /* Contact Section */
@@ -406,7 +425,7 @@
             }
             
             .product-image {
-                height: 250px;
+                height: 200px;
             }
         }
         
@@ -433,7 +452,7 @@
             }
             
             .product-image {
-                height: 200px;
+                height: 180px;
             }
             
             .contact-info {
@@ -523,26 +542,19 @@
                 <!-- Product 1 -->
                 <div class="product-card">
                     <div class="product-image">
-                        <img src="supraton multivitamins and minerals.jpg" alt="فيتامينات ومعادن متعددة">
-                    </div>
-                    <div class="product-info">
-                        <h3 class="product-title arabic-content">فيتامينات ومعادن متعددة</h3>
-                        <h3 class="product-title english-content" style="display: none;">Multivitamins and Minerals</h3>
-                    </div>
-                </div>
-                
-                <!-- Product 2 -->
-                <div class="product-card">
-                    <div class="product-image">
                         <img src="Super Omega 3.jpg" alt="أوميغا 3 سوبر">
                     </div>
                     <div class="product-info">
                         <h3 class="product-title arabic-content">أوميغا 3 سوبر</h3>
                         <h3 class="product-title english-content" style="display: none;">Super Omega 3</h3>
+                        <p class="product-benefit arabic-content">لصحة القلب والدماغ والمفاصل</p>
+                        <p class="product-benefit english-content" style="display: none;">For heart, brain, and joint health</p>
+                        <div class="product-price arabic-content">8$</div>
+                        <div class="product-price english-content" style="display: none;">8$</div>
                     </div>
                 </div>
                 
-                <!-- Product 3 -->
+                <!-- Product 2 -->
                 <div class="product-card">
                     <div class="product-image">
                         <img src="Super Omega 3 .jpg" alt="أوميغا 3">
@@ -550,6 +562,25 @@
                     <div class="product-info">
                         <h3 class="product-title arabic-content">أوميغا 3</h3>
                         <h3 class="product-title english-content" style="display: none;">Omega 3</h3>
+                        <p class="product-benefit arabic-content">دعم صحة القلب والذاكرة والرؤية</p>
+                        <p class="product-benefit english-content" style="display: none;">Supports heart health, memory, and vision</p>
+                        <div class="product-price arabic-content">15$ (90 حبة)</div>
+                        <div class="product-price english-content" style="display: none;">15$ (90 tablets)</div>
+                    </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="Omega 3-6-9.jpg" alt="أوميغا 3-6-9">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title arabic-content">أوميغا 3-6-9</h3>
+                        <h3 class="product-title english-content" style="display: none;">Omega 3-6-9</h3>
+                        <p class="product-benefit arabic-content">توازن الأحماض الدهنية الأساسية للجسم</p>
+                        <p class="product-benefit english-content" style="display: none;">Balances essential fatty acids for the body</p>
+                        <div class="product-price arabic-content">9$</div>
+                        <div class="product-price english-content" style="display: none;">9$</div>
                     </div>
                 </div>
                 
@@ -561,98 +592,14 @@
                     <div class="product-info">
                         <h3 class="product-title arabic-content">فيتامين د3 + ك2</h3>
                         <h3 class="product-title english-content" style="display: none;">Vitamin D3 + K2</h3>
+                        <p class="product-benefit arabic-content">لصحة العظام والمناعة وتوازن الكالسيوم</p>
+                        <p class="product-benefit english-content" style="display: none;">For bone health, immunity, and calcium balance</p>
+                        <div class="product-price arabic-content">8$</div>
+                        <div class="product-price english-content" style="display: none;">8$</div>
                     </div>
                 </div>
                 
                 <!-- Product 5 -->
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="Hydrolyzed marine collagen.jpg" alt="كولاجين بحري مهدرج">
-                    </div>
-                    <div class="product-info">
-                        <h3 class="product-title arabic-content">كولاجين بحري مهدرج</h3>
-                        <h3 class="product-title english-content" style="display: none;">Hydrolyzed Marine Collagen</h3>
-                    </div>
-                </div>
-                
-                <!-- Product 6 -->
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="Vitamin c 1000 mg  + zinc .jpg" alt="فيتامين سي 1000 ملغ + زنك">
-                    </div>
-                    <div class="product-info">
-                        <h3 class="product-title arabic-content">فيتامين سي 1000 ملغ + زنك</h3>
-                        <h3 class="product-title english-content" style="display: none;">Vitamin C 1000mg + Zinc</h3>
-                    </div>
-                </div>
-                
-                <!-- Product 7 -->
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="biton 5000.jpg" alt="بيتون 5000">
-                    </div>
-                    <div class="product-info">
-                        <h3 class="product-title arabic-content">بيتون 5000</h3>
-                        <h3 class="product-title english-content" style="display: none;">Biton 5000</h3>
-                    </div>
-                </div>
-                
-                <!-- Product 8 -->
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="Magnesium + B6.jpg" alt="مغنيسيوم + ب6">
-                    </div>
-                    <div class="product-info">
-                        <h3 class="product-title arabic-content">مغنيسيوم + ب6</h3>
-                        <h3 class="product-title english-content" style="display: none;">Magnesium + B6</h3>
-                    </div>
-                </div>
-                
-                <!-- Product 9 -->
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="vitamin b12.jpg" alt="فيتامين ب12">
-                    </div>
-                    <div class="product-info">
-                        <h3 class="product-title arabic-content">فيتامين ب12</h3>
-                        <h3 class="product-title english-content" style="display: none;">Vitamin B12</h3>
-                    </div>
-                </div>
-
-                <!-- Product 10 -->
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="melatonin.jpg" alt="ميلاتونين">
-                    </div>
-                    <div class="product-info">
-                        <h3 class="product-title arabic-content">ميلاتونين</h3>
-                        <h3 class="product-title english-content" style="display: none;">Melatonin</h3>
-                    </div>
-                </div>
-
-                <!-- Product 11 -->
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="well men for infert.jpg" alt="ويل مين للخصوبة">
-                    </div>
-                    <div class="product-info">
-                        <h3 class="product-title arabic-content">ويل مين للخصوبة</h3>
-                        <h3 class="product-title english-content" style="display: none;">Well Men for Infertility</h3>
-                    </div>
-                </div>
-
-                <!-- Product 12 -->
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="well women for infert.jpg" alt="ويل وومان للخصوبة">
-                    </div>
-                    <div class="product-info">
-                        <h3 class="product-title arabic-content">ويل وومان للخصوبة</h3>
-                        <h3 class="product-title english-content" style="display: none;">Well Women for Infertility</h3>
-                    </div>
-                </div>
-
-                <!-- Product 13 -->
                 <div class="product-card">
                     <div class="product-image">
                         <img src="Krill oil.jpg" alt="زيت الكريل">
@@ -660,17 +607,145 @@
                     <div class="product-info">
                         <h3 class="product-title arabic-content">زيت الكريل</h3>
                         <h3 class="product-title english-content" style="display: none;">Krill Oil</h3>
+                        <p class="product-benefit arabic-content">مصدر قوي لأوميغا 3 مع مضادات الأكسدة</p>
+                        <p class="product-benefit english-content" style="display: none;">Powerful source of Omega 3 with antioxidants</p>
+                        <div class="product-price arabic-content">9$</div>
+                        <div class="product-price english-content" style="display: none;">9$</div>
+                    </div>
+                </div>
+                
+                <!-- Product 6 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="supraton multivitamins and minerals.jpg" alt="فيتامينات ومعادن متعددة">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title arabic-content">فيتامينات ومعادن متعددة</h3>
+                        <h3 class="product-title english-content" style="display: none;">Multivitamins and Minerals</h3>
+                        <p class="product-benefit arabic-content">دعم شامل للطاقة والمناعة والصحة العامة</p>
+                        <p class="product-benefit english-content" style="display: none;">Comprehensive support for energy, immunity, and overall health</p>
+                        <div class="product-price arabic-content">8$</div>
+                        <div class="product-price english-content" style="display: none;">8$</div>
+                    </div>
+                </div>
+                
+                <!-- Product 7 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="Hydrolyzed marine collagen.jpg" alt="كولاجين بحري مهدرج">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title arabic-content">كولاجين بحري مهدرج</h3>
+                        <h3 class="product-title english-content" style="display: none;">Hydrolyzed Marine Collagen</h3>
+                        <p class="product-benefit arabic-content">لصحة البشرة والشعر والأظافر والمفاصل</p>
+                        <p class="product-benefit english-content" style="display: none;">For skin, hair, nails, and joint health</p>
+                        <div class="product-price arabic-content">10$</div>
+                        <div class="product-price english-content" style="display: none;">10$</div>
+                    </div>
+                </div>
+                
+                <!-- Product 8 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="Vitamin c 1000 mg  + zinc .jpg" alt="فيتامين سي 1000 ملغ + زنك">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title arabic-content">فيتامين سي 1000 ملغ + زنك</h3>
+                        <h3 class="product-title english-content" style="display: none;">Vitamin C 1000mg + Zinc</h3>
+                        <p class="product-benefit arabic-content">تقوية المناعة ومضاد للأكسدة</p>
+                        <p class="product-benefit english-content" style="display: none;">Strengthens immunity and acts as an antioxidant</p>
+                        <div class="product-price arabic-content">7$</div>
+                        <div class="product-price english-content" style="display: none;">7$</div>
+                    </div>
+                </div>
+                
+                <!-- Product 9 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="biton 5000.jpg" alt="بيوتين 5000">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title arabic-content">بيوتين 5000</h3>
+                        <h3 class="product-title english-content" style="display: none;">Biotin 5000</h3>
+                        <p class="product-benefit arabic-content">لتعزيز صحة الشعر والبشرة والأظافر</p>
+                        <p class="product-benefit english-content" style="display: none;">Enhances hair, skin, and nail health</p>
+                        <div class="product-price arabic-content">10$</div>
+                        <div class="product-price english-content" style="display: none;">10$</div>
+                    </div>
+                </div>
+                
+                <!-- Product 10 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="Magnesium + B6.jpg" alt="مغنيسيوم + ب6">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title arabic-content">مغنيسيوم + ب6</h3>
+                        <h3 class="product-title english-content" style="display: none;">Magnesium + B6</h3>
+                        <p class="product-benefit arabic-content">لصحة الأعصاب والعضلات والنوم المريح</p>
+                        <p class="product-benefit english-content" style="display: none;">For nerve, muscle health, and restful sleep</p>
+                        <div class="product-price arabic-content">8$</div>
+                        <div class="product-price english-content" style="display: none;">8$</div>
+                    </div>
+                </div>
+
+                <!-- Product 11 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="vitamin b12.jpg" alt="فيتامين ب12">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title arabic-content">فيتامين ب12</h3>
+                        <h3 class="product-title english-content" style="display: none;">Vitamin B12</h3>
+                        <p class="product-benefit arabic-content">لصحة الأعصاب والطاقة وتكوين الدم</p>
+                        <p class="product-benefit english-content" style="display: none;">For nerve health, energy, and blood formation</p>
+                        <div class="product-price arabic-content">8$</div>
+                        <div class="product-price english-content" style="display: none;">8$</div>
+                    </div>
+                </div>
+
+                <!-- Product 12 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="melatonin.jpg" alt="ميلاتونين">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title arabic-content">ميلاتونين</h3>
+                        <h3 class="product-title english-content" style="display: none;">Melatonin</h3>
+                        <p class="product-benefit arabic-content">لتنظيم النوم ودعم الساعة البيولوجية</p>
+                        <p class="product-benefit english-content" style="display: none;">Regulates sleep and supports circadian rhythm</p>
+                        <div class="product-price arabic-content">8$</div>
+                        <div class="product-price english-content" style="display: none;">8$</div>
+                    </div>
+                </div>
+
+                <!-- Product 13 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="well men for infert.jpg" alt="ويل مين للخصوبة">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title arabic-content">ويل مين للخصوبة</h3>
+                        <h3 class="product-title english-content" style="display: none;">Well Men for Infertility</h3>
+                        <p class="product-benefit arabic-content">دعم الصحة الإنجابية والخصوبة للرجال</p>
+                        <p class="product-benefit english-content" style="display: none;">Supports male reproductive health and fertility</p>
+                        <div class="product-price arabic-content">13$</div>
+                        <div class="product-price english-content" style="display: none;">13$</div>
                     </div>
                 </div>
 
                 <!-- Product 14 -->
                 <div class="product-card">
                     <div class="product-image">
-                        <img src="Omega 3-6-9.jpg" alt="أوميغا 3-6-9">
+                        <img src="well women for infert.jpg" alt="ويل وومان للخصوبة">
                     </div>
                     <div class="product-info">
-                        <h3 class="product-title arabic-content">أوميغا 3-6-9</h3>
-                        <h3 class="product-title english-content" style="display: none;">Omega 3-6-9</h3>
+                        <h3 class="product-title arabic-content">ويل وومان للخصوبة</h3>
+                        <h3 class="product-title english-content" style="display: none;">Well Women for Infertility</h3>
+                        <p class="product-benefit arabic-content">دعم الصحة الإنجابية والخصوبة للنساء</p>
+                        <p class="product-benefit english-content" style="display: none;">Supports female reproductive health and fertility</p>
+                        <div class="product-price arabic-content">15$</div>
+                        <div class="product-price english-content" style="display: none;">15$</div>
                     </div>
                 </div>
 
@@ -682,6 +757,10 @@
                     <div class="product-info">
                         <h3 class="product-title arabic-content">ساو بالميتو</h3>
                         <h3 class="product-title english-content" style="display: none;">Saw Palmetto</h3>
+                        <p class="product-benefit arabic-content">لصحة البروستاتا والشعر عند الرجال</p>
+                        <p class="product-benefit english-content" style="display: none;">For prostate health and male hair health</p>
+                        <div class="product-price arabic-content">8$</div>
+                        <div class="product-price english-content" style="display: none;">8$</div>
                     </div>
                 </div>
 
@@ -693,6 +772,10 @@
                     <div class="product-info">
                         <h3 class="product-title arabic-content">أقراص جو</h3>
                         <h3 class="product-title english-content" style="display: none;">Go Tablets</h3>
+                        <p class="product-benefit arabic-content">لصحة المفاصل والحركة والمرونة</p>
+                        <p class="product-benefit english-content" style="display: none;">For joint health, mobility, and flexibility</p>
+                        <div class="product-price arabic-content">9$</div>
+                        <div class="product-price english-content" style="display: none;">9$</div>
                     </div>
                 </div>
             </div>
