@@ -3,36 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="خالد منجونة - متجر متخصص في بيع الفيتامينات والمعادن والمكملات الغذائية عالية الجودة في سوريا. فيتامينات لصحة أفضل، معادن، مكملات رياضية، كولاجين بحري.">
-    <meta name="keywords" content="فيتامينات, معادن, مكملات غذائية, صحة, عافية, خالد منجونة, حلب, سوريا, فيتامين سي, فيتامين د, أوميغا 3, كولاجين, مكملات رياضية">
-    <meta name="author" content="خالد منجونة">
-    <meta property="og:title" content="خالد منجونة - متجر الفيتامينات والمعادن">
-    <meta property="og:description" content="اكتشف مجموعة منتجاتنا الطبيعية عالية الجودة لتعزيز صحتك ورفاهيتك">
+    <meta name="description" content="Khalid Manjouna - Specialty store selling high-quality vitamins, minerals, and nutritional supplements in Syria. Vitamins for better health, minerals, sports supplements, marine collagen.">
+    <meta name="keywords" content="vitamins, minerals, nutritional supplements, health, wellness, Khalid Manjouna, Aleppo, Syria, vitamin C, vitamin D, omega 3, collagen, sports supplements">
+    <meta name="author" content="Khalid Manjouna">
+    <meta property="og:title" content="Khalid Manjouna - Vitamins and Minerals Store">
+    <meta property="og:description" content="Discover our high-quality natural products to enhance your health and well-being">
     <meta property="og:image" content="logo.png">
     <meta property="og:url" content="https://www.khalidmanjouna.com">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="خالد منجونة - متجر الفيتامينات والمعادن">
-    <meta name="twitter:description" content="اكتشف مجموعة منتجاتنا الطبيعية عالية الجودة لتعزيز صحتك ورفاهيتك">
+    <meta name="twitter:title" content="Khalid Manjouna - Vitamins and Minerals Store">
+    <meta name="twitter:description" content="Discover our high-quality natural products to enhance your health and well-being">
     <meta name="twitter:image" content="logo.png">
     
     <!-- Google Site Verification Code -->
     <meta name="google-site-verification" content="google188e49467e73ea46.html">
     
     <link rel="icon" href="logo.png" type="image/png">
-    <title>خالد منجونة - متجر الفيتامينات والمعادن والمكملات الغذائية في سوريا</title>
+    <title>Khalid Manjouna - Vitamins, Minerals and Nutritional Supplements Store in Syria</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Store",
-      "name": "خالد منجونة",
-      "description": "متجر متخصص في بيع الفيتامينات والمعادن والمكملات الغذائية نرويجية الجودة",
+      "name": "Khalid Manjouna",
+      "description": "Specialty store selling high-quality Norwegian vitamins, minerals and nutritional supplements",
       "address": {
         "@type": "PostalAddress",
-        "addressLocality": "حلب",
-        "addressCountry": "سوريا"
+        "addressLocality": "Aleppo",
+        "addressCountry": "Syria"
       },
       "telephone": "+963956094985",
       "email": "khaledmanjouna@gmail.com",
@@ -383,6 +383,13 @@
             display: none;
         }
         
+        /* Flag Styles */
+        .flag {
+            font-size: 1.2em;
+            margin: 0 5px;
+            vertical-align: middle;
+        }
+        
         /* Responsive Design */
         @media (max-width: 768px) {
             .header-content {
@@ -492,8 +499,8 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
-            <h1 class="arabic-content">فيتامينات ومعادن لصحة أفضل - جودة نرويجية 🇳🇴</h1>
-            <h1 class="english-content" style="display: none;">Vitamins and Minerals for Better Health - Norwegian Quality 🇳🇴</h1>
+            <h1 class="arabic-content">فيتامينات ومعادن لصحة أفضل - جودة نرويجية <span class="flag">🇳🇴</span></h1>
+            <h1 class="english-content" style="display: none;">Vitamins and Minerals for Better Health - Norwegian Quality <span class="flag">🇳🇴</span></h1>
             <p class="arabic-content">اكتشف مجموعة منتجاتنا الطبيعية عالية الجودة لتعزيز صحتك ورفاهيتك</p>
             <p class="english-content" style="display: none;">Discover our high-quality natural products to enhance your health and well-being</p>
             <a href="#products" class="btn arabic-content">تسوق الآن</a>
@@ -848,15 +855,33 @@
                 const englishElements = document.querySelectorAll('.english-content');
                 
                 if (isEnglish) {
-                    arabicElements.forEach(el => el.style.display = 'none');
-                    englishElements.forEach(el => el.style.display = 'block');
+                    // Switch to English
+                    arabicElements.forEach(el => {
+                        if (!el.classList.contains('flag')) {
+                            el.style.display = 'none';
+                        }
+                    });
+                    englishElements.forEach(el => {
+                        if (!el.classList.contains('flag')) {
+                            el.style.display = 'block';
+                        }
+                    });
                     document.dir = 'ltr';
                     document.lang = 'en';
                     document.querySelector('html').setAttribute('dir', 'ltr');
                     document.querySelector('html').setAttribute('lang', 'en');
                 } else {
-                    arabicElements.forEach(el => el.style.display = 'block');
-                    englishElements.forEach(el => el.style.display = 'none');
+                    // Switch to Arabic
+                    arabicElements.forEach(el => {
+                        if (!el.classList.contains('flag')) {
+                            el.style.display = 'block';
+                        }
+                    });
+                    englishElements.forEach(el => {
+                        if (!el.classList.contains('flag')) {
+                            el.style.display = 'none';
+                        }
+                    });
                     document.dir = 'rtl';
                     document.lang = 'ar';
                     document.querySelector('html').setAttribute('dir', 'rtl');
