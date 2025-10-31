@@ -132,7 +132,7 @@
         
         /* Hero Section */
         .hero {
-            background: url('https://images.unsplash.com/photo-1576671414121-aa0b82f00957?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+            background: url('https://raw.githubusercontent.com/khaledmanjouna/1/main/images.jpg') no-repeat center center/cover;
             height: 500px;
             display: flex;
             align-items: center;
@@ -767,7 +767,7 @@
                 <!-- Product 16 -->
                 <div class="product-card">
                     <div class="product-image">
-                        <img src="Go Tablets .jpg" alt="أقراص جو">
+                        <img src="https://raw.githubusercontent.com/khaledmanjouna/1/main/Go%20Tablets%20.jpg" alt="أقراص جو">
                     </div>
                     <div class="product-info">
                         <h3 class="product-title arabic-content">أقراص جو</h3>
@@ -826,44 +826,4 @@
                 <div class="social-links">
                     <a href="#"><i class="fab fa-facebook"></i></a>
                     <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="https://wa.me/963956094985" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                </div>
-                <p class="arabic-content">&copy; 2023 جميع الحقوق محفوظة لخالد منجونة</p>
-                <p class="english-content" style="display: none;">&copy; 2023 All Rights Reserved to Khalid Manjouna</p>
-            </div>
-        </div>
-    </footer>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const languageToggle = document.getElementById('languageToggle');
-            let isEnglish = false;
-            
-            languageToggle.addEventListener('click', function(e) {
-                e.preventDefault();
-                isEnglish = !isEnglish;
-                
-                const arabicElements = document.querySelectorAll('.arabic-content');
-                const englishElements = document.querySelectorAll('.english-content');
-                
-                if (isEnglish) {
-                    arabicElements.forEach(el => el.style.display = 'none');
-                    englishElements.forEach(el => el.style.display = 'block');
-                    document.dir = 'ltr';
-                    document.lang = 'en';
-                    document.querySelector('html').setAttribute('dir', 'ltr');
-                    document.querySelector('html').setAttribute('lang', 'en');
-                } else {
-                    arabicElements.forEach(el => el.style.display = 'block');
-                    englishElements.forEach(el => el.style.display = 'none');
-                    document.dir = 'rtl';
-                    document.lang = 'ar';
-                    document.querySelector('html').setAttribute('dir', 'rtl');
-                    document.querySelector('html').setAttribute('lang', 'ar');
-                }
-            });
-        });
-    </script>
-</body>
-</html>
+                    <a href="#"><i class="fab fa-twitter"></i></
